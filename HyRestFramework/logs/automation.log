@@ -331,3 +331,12 @@
 14:16:59.847 [main] INFO  api.test.UserTests - *********** Updated User info *************
 14:16:59.852 [main] INFO  api.test.UserTests - *********** Deleting User info *************
 14:17:01.378 [main] INFO  api.test.UserTests - *********** Deleted User info *************
+21:03:21.559 [main] DEBUG api.test.UserTests2 - debugging...........
+21:03:21.587 [main] INFO  api.test.UserTests2 - *********** Posting User*************
+21:03:25.967 [main] INFO  api.test.UserTests2 - *********** Posted User*************
+21:03:25.978 [main] INFO  api.test.UserTests2 - *********** Reading User info *************
+21:03:27.464 [main] INFO  api.test.UserTests2 - *********** Read User info *************
+21:03:27.470 [main] INFO  api.test.UserTests2 - *********** updating User info *************
+21:03:30.039 [main] INFO  api.test.UserTests2 - *********** Updated User info *************
+21:03:30.046 [main] INFO  api.test.UserTests2 - *********** Deleting User info *************
+21:03:31.474 [main] INFO  api.test.UserTests2 - *********** Deleted User info *************
