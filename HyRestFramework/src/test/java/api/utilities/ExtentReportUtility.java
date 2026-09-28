@@ -26,7 +26,7 @@ public class ExtentReportUtility implements ITestListener
         String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());//time stamp
         repName="Test-Report-"+timeStamp+".html";
 
-        sparkReporter=new ExtentSparkReporter(".\\reports\\"+repName);//specify location of the report
+        sparkReporter=new ExtentSparkReporter("./reports/"+repName);//specify location of the report
 
         sparkReporter.config().setDocumentTitle("RestAssuredAutomationProject"); // Title of report
         sparkReporter.config().setReportName("Pet Store Users API"); // name of the report

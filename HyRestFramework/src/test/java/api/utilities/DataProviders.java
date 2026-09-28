@@ -8,7 +8,10 @@ public class DataProviders {
 	@DataProvider(name="Data")
 	public String[][] getAllData() throws IOException
 	{
-		String path=System.getProperty("user.dir")+"//testdata//Userdata.xlsx";
+		//String path=System.getProperty("user.dir")+"//testdata//Userdata.xlsx";
+		
+		// Ab (absolute path):
+		String path="./testdata/userdata.xlsx";
 		ExcelUtility xl=new ExcelUtility(path);
 
 		int rownum=xl.getRowCount("Sheet1");
@@ -29,7 +32,7 @@ public class DataProviders {
 	@DataProvider(name="UserNames")
 	public String[] getUserNames() throws IOException
 	{
-		String path=System.getProperty("user.dir")+"//testdata//Userdata.xlsx";
+		String path="./testdata/userdata.xlsx";
 		ExcelUtility xl=new ExcelUtility(path);
 
 		int rownum=xl.getRowCount("Sheet1");
