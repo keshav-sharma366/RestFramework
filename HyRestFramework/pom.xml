@@ -5,7 +5,30 @@
 	<groupId>framework</groupId>
 	<artifactId>HyRestFramework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<build>
+		<plugins>
 
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.5.4</version>   <!-- CHANGED: 3.6.0 se 3.5.4 -->
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+				<!-- REMOVED: surefire-testng dependency (3.6.0 me exist nahi
+				karti) -->
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.16.0</version>
+			</plugin>
+
+		</plugins>
+	</build>
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
